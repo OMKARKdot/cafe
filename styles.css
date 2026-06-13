@@ -28,7 +28,8 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html{overflow-x:hidden;width:100%}
+body{overflow-x:hidden;width:100%;height:100%}
 
 @media (max-width: 980px){
   ::-webkit-scrollbar{width:0;height:0}
@@ -227,6 +228,7 @@ img{max-width:100%;display:block}
 }
 
 .hero-steam{position:absolute; left:50%; top:20%; width:520px; height:520px; transform: translateX(-50%); pointer-events:none; opacity:.85;}
+@media (max-width:600px){.hero-steam{display:none}}
 .hero-steam span{
   position:absolute; bottom:130px; left:50%; width:110px; height:280px;
   border-radius:999px;
@@ -704,6 +706,69 @@ img{max-width:100%;display:block}
 
 @media (prefers-reduced-motion: reduce){
   .typing-caret::after{animation:none; opacity:1}
+}
+
+@media (max-width:600px){
+  .hero-content{padding:60px 0 50px}
+  .hero-title{font-size:clamp(28px,8vw,38px)}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{justify-content:center}
+  .hero-meta .meta-pill{font-size:11px;padding:6px 10px}
+  .section{padding:48px 0}
+  .section-head{margin-bottom:18px}
+  .h2{font-size:clamp(22px,6vw,28px)}
+  .lead{font-size:14px}
+  .about-text{padding:16px}
+  .about-collage{min-height:280px}
+  .c1{left:10px;top:12px;width:56%;height:48%}
+  .c2{right:10px;top:28px;width:38%;height:36%}
+  .c3{left:16px;bottom:12px;width:38%;height:38%}
+  .collage-note{font-size:10px;padding:6px 10px;right:10px;bottom:10px}
+  .menu-img{height:120px}
+  .menu-body{padding:12px}
+  .menu-title{font-size:16px}
+  .menu-desc{font-size:13px}
+  .sig-img{height:140px}
+  .sig-body{padding:14px}
+  .sig-title{font-size:20px}
+  .sig-desc{font-size:14px}
+  .t-quote{font-size:18px}
+  .t-card{padding:16px;min-height:auto}
+  .why-banner{max-height:180px}
+  .why-banner img{height:180px}
+  .feature-grid{gap:12px}
+  .feature{padding:14px}
+  .feature-img{height:100px}
+  .feature h3{font-size:14px}
+  .feature p{font-size:13px}
+  .contact-row{flex-direction:column;gap:4px;padding:10px 0}
+  .contact-row span{font-size:12px}
+  .contact-row strong,.contact-row a{font-size:13px}
+  .contact-card{padding:16px}
+  .map-frame{height:260px}
+  .footer{padding:36px 0 20px}
+  .footer-inner{gap:16px}
+  .footer-col h3{font-size:13px}
+  .footer-col a{font-size:13px;margin:6px 0}
+  .footer-bottom{font-size:12px}
+  .reserve-card{padding:16px}
+  .modal-inner{padding:16px}
+  .modal-title{font-size:22px}
+  .form-actions{flex-direction:column;align-items:stretch}
+  .form-actions .btn{justify-content:center}
+  .nav-inner{height:60px}
+  .brand-name{font-size:17px}
+  .brand-mark{width:34px;height:34px}
+}
+
+@media (max-width:400px){
+  .about-collage{min-height:220px}
+  .c1{width:52%;height:44%}
+  .c2{width:44%;height:32%}
+  .c3{width:44%;height:34%}
+  .feature-grid{grid-template-columns:1fr}
+  .masonry{columns:1 !important}
+  .m-item .m-img{height:200px !important}
 }
 
 
