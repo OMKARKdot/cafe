@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Café Noon — Where Every Cup Tells a Story." />
+  <title>Café Noon</title>
+
+  <!-- Premium-like typography (Squarespace-inspired) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navbar -->
+  <header class="site-header" data-elevate>
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Café Noon home">
+        <span class="brand-mark" aria-hidden="true">☕</span>
+        <span class="brand-name">Café Noon</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#signature">Signature</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-accent btn-small" href="#reserve">Reserve</a>
+        <button class="burger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false" data-burger>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileMenu" aria-hidden="true" data-drawer>
+      <div class="mobile-drawer-inner">
+        <div class="mobile-top">
+          <a class="brand" href="#top" aria-label="Café Noon home">
+            <span class="brand-mark" aria-hidden="true">☕</span>
+            <span class="brand-name">Café Noon</span>
+          </a>
+          <button class="burger burger--close" type="button" aria-label="Close menu" data-burger-close>
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <ul class="mobile-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#signature">Signature</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="mobile-cta">
+          <a class="btn btn-accent" href="#reserve">Reserve a Table</a>
+          <a class="btn btn-ghost" href="#menu">Explore Menu</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-media" data-parallax-zoom>
+          <img class="hero-img" src="./assets/cafe-interior-2.jpg" alt="Café Noon interior ambiance" />
+
+          <div class="hero-steam" aria-hidden="true" data-steam>
+            <span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy" data-fade>
+          <div class="hero-kicker">Premium café • Artisan coffee • Cozy ambience</div>
+
+          <h1 class="hero-title" data-typing>Welcome to Café Noon</h1>
+
+          <p class="hero-subtitle">Where Every Cup Tells a Story</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#menu">Explore Menu</a>
+            <a class="btn btn-accent" href="#reserve">Reserve a Table</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="meta-pill">Freshly brewed daily</span>
+            <span class="meta-pill">Roasted in small batches</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">A café with a quiet kind of magic</h2>
+          <p class="lead">Luxury, minimal, and deeply human—crafted for mornings, dates, and late-night conversations.</p>
+        </div>
+
+        <div class="grid-2 about-grid" data-fade>
+          <div class="about-text">
+            <h3 class="h3">Our story</h3>
+            <div class="about-bullets">
+              <article class="check-card">
+                <h4>Passion for artisan coffee</h4>
+                <p>Meticulously selected beans, dialed by hand, and brewed with intention.</p>
+              </article>
+              <article class="check-card">
+                <h4>Freshly brewed daily experience</h4>
+                <p>From first pour to final latte—every cup is made on demand.</p>
+              </article>
+              <article class="check-card">
+                <h4>Comfort in every detail</h4>
+                <p>Soft lighting, warm tones, and a calm atmosphere designed for you.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="about-collage" aria-label="Image collage">
+            <div class="collage-item c1" data-parallax>
+              <img src="./assets/coffee-art-1.jpg" alt="Coffee cups" loading="lazy" />
+            </div>
+            <div class="collage-item c2" data-parallax>
+              <img src="./assets/cafe-interior-1.jpg" alt="Café interior" loading="lazy" />
+            </div>
+            <div class="collage-item c3" data-parallax>
+              <img src="./assets/beans.jpg" alt="Coffee beans" loading="lazy" />
+            </div>
+            <div class="collage-note">Sourced • Roasted • Brewed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-contrast" id="menu">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Menu</h2>
+          <p class="lead">Choose a category. Add favorites to your order—built for browsing on mobile.</p>
+        </div>
+
+        <div class="menu-tabs" data-fade>
+          <div class="tab-row" role="tablist" aria-label="Menu categories">
+            <button class="tab is-active" role="tab" aria-selected="true" data-tab="hot">☕ Hot Coffee</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="cold">🧊 Cold Coffee</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="snacks">🥐 Snacks & Bakery</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="desserts">🍰 Desserts</button>
+          </div>
+
+          <div class="menu-grid" data-menu-grid>
+            <!-- Hot -->
+            <div class="menu-panel is-active" data-panel="hot">
+              <article class="menu-card" data-item data-tags="hot">
+                <div class="menu-img">
+                  <img src="./assets/espresso.jpg" alt="Espresso" loading="lazy" />
+                </div>
+                <div class="menu-body">
+                  <div class="menu-top">
+                    <h3 class="menu-title">Espresso</h3>
+                    <div class="menu-price">₹120</div>
+                  </div>
+                  <p class="menu-desc">Bold, aromatic, and beautifully balanced.</p>
+                  <button class="btn btn-order" type="button" data-add>
+                    Add to Order
+                    <span class="btn-icon" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="menu-card" data-item data-tags="hot">
+                <div class="menu-img">
+                  <img src="./assets/cappuccino.jpg" alt="Cappuccino" loading="lazy" />
+                </div>
+                <div class="menu-body">
+                  <div class="menu-top">
+                    <h3 class="menu-title">Cappuccino</h3>
+                    <div class="menu-price">₹180</div>
+                  </div>
+                  <p class="menu-desc">Silky foam with a warm, toasted finish.</p>
+                  <button class="btn btn-order" type="button" data-add>
+                    Add to Order
+                    <span class="btn-icon" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Cold -->
+            <div class="menu-panel" data-panel="cold">
+              <article class="menu-card" data-item data-tags="cold">
+                <div class="menu-img">
+                  <img src="./assets/cold-brew.jpg" alt="Cold Brew" loading="lazy" />
+                </div>
+                <div class="menu-body">
+                  <div class="menu-top">
+                    <h3 class="menu-title">Cold Brew</h3>
+                    <div class="menu-price">₹220</div>
+                  </div>
+                  <p class="menu-desc">Smooth, slow-steeped coffee with depth.</p>
+                  <button class="btn btn-order" type="button" data-add>
+                    Add to Order
+                    <span class="btn-icon" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Snacks -->
+            <div class="menu-panel" data-panel="snacks">
+              <article class="menu-card" data-item data-tags="snacks">
+                <div class="menu-img">
+                  <img src="./assets/croissant.jpg" alt="Croissant" loading="lazy" />
+                </div>
+                <div class="menu-body">
+                  <div class="menu-top">
+                    <h3 class="menu-title">Croissant</h3>
+                    <div class="menu-price">₹150</div>
+                  </div>
+                  <p class="menu-desc">Flaky, buttery layers—baked to golden perfection.</p>
+                  <button class="btn btn-order" type="button" data-add>
+                    Add to Order
+                    <span class="btn-icon" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-panel" data-panel="desserts">
+              <article class="menu-card" data-item data-tags="desserts">
+                <div class="menu-img">
+                  <img src="./assets/chocolate-cake.jpg" alt="Chocolate Cake" loading="lazy" />
+                </div>
+                <div class="menu-body">
+                  <div class="menu-top">
+                    <h3 class="menu-title">Chocolate Cake</h3>
+                    <div class="menu-price">₹250</div>
+                  </div>
+                  <p class="menu-desc">Rich cocoa, velvety crumb, and a luxurious bite.</p>
+                  <button class="btn btn-order" type="button" data-add>
+                    Add to Order
+                    <span class="btn-icon" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="order-dock" aria-live="polite">
+            <div class="order-pill">
+              <span class="order-label">Your order</span>
+              <span class="order-count" data-order-count>0</span>
+            </div>
+            <button class="btn btn-dark" type="button" id="viewOrder">
+              View Order
+              <span class="btn-icon" aria-hidden="true">✦</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE CAROUSEL -->
+    <section class="section" id="signature">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Signature Drinks</h2>
+          <p class="lead">Premium flavors, glowing presentation, and unmistakable Café Noon character.</p>
+        </div>
+
+        <div class="carousel" data-carousel data-fade>
+          <div class="carousel-track" data-track>
+            <article class="sig-card is-active">
+              <div class="sig-glow" aria-hidden="true"></div>
+              <div class="sig-img">
+                <img src="./assets/latte.jpg" alt="Café Noon Special Latte" loading="lazy" />
+              </div>
+              <div class="sig-body">
+                <h3 class="sig-title">Café Noon Special Latte</h3>
+                <p class="sig-desc">Velvet milk, caramel warmth, and a clean espresso finish.</p>
+                <div class="sig-meta"><span class="sig-price">₹260</span><span class="sig-tag">Bestseller</span></div>
+              </div>
+            </article>
+
+            <article class="sig-card">
+              <div class="sig-glow" aria-hidden="true"></div>
+              <div class="sig-img">
+                <img src="./assets/macchiato.jpg" alt="Caramel Macchiato Bliss" loading="lazy" />
+              </div>
+              <div class="sig-body">
+                <h3 class="sig-title">Caramel Macchiato Bliss</h3>
+                <p class="sig-desc">Toasted caramel notes with a silky, aromatic crema.</p>
+                <div class="sig-meta"><span class="sig-price">₹240</span><span class="sig-tag">Sweet & bold</span></div>
+              </div>
+            </article>
+
+            <article class="sig-card">
+              <div class="sig-glow" aria-hidden="true"></div>
+              <div class="sig-img">
+                <img src="./assets/hazelnut.jpg" alt="Vanilla Hazelnut Brew" loading="lazy" />
+              </div>
+              <div class="sig-body">
+                <h3 class="sig-title">Vanilla Hazelnut Brew</h3>
+                <p class="sig-desc">Creamy vanilla with hazelnut depth—comfort in a cup.</p>
+                <div class="sig-meta"><span class="sig-price">₹230</span><span class="sig-tag">Cozy</span></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls" aria-label="Carousel controls">
+            <button class="car-btn" type="button" data-prev aria-label="Previous signature">←</button>
+            <div class="dots" data-dots></div>
+            <button class="car-btn" type="button" data-next aria-label="Next signature">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (masonry + lightbox) -->
+    <section class="section section-contrast" id="gallery">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Ambience & Gallery</h2>
+          <p class="lead">A mosaic of café interiors, coffee art, events, and happy faces.</p>
+        </div>
+
+        <div class="gallery-filters" data-fade>
+          <div class="tab-row" role="tablist" aria-label="Gallery categories">
+            <button class="tab is-active" role="tab" aria-selected="true" data-gallery-tab="interior">Café Interior</button>
+            <button class="tab" role="tab" aria-selected="false" data-gallery-tab="art">Coffee Art</button>
+            <button class="tab" role="tab" aria-selected="false" data-gallery-tab="events">Events</button>
+            <button class="tab" role="tab" aria-selected="false" data-gallery-tab="customers">Customers</button>
+          </div>
+        </div>
+
+        <div class="masonry" data-masonry>
+          <button class="m-item" data-lightbox="interior" aria-label="Open image">
+            <div class="m-img"><img src="./assets/interior-2.jpg" alt="Café interior with warm lighting" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="interior" aria-label="Open image">
+            <div class="m-img"><img src="./assets/interior-1.jpg" alt="Cozy café seating area" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="art" aria-label="Open image">
+            <div class="m-img"><img src="./assets/coffee-art-1.jpg" alt="Latte art on espresso" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="events" aria-label="Open image">
+            <div class="m-img"><img src="./assets/events-1.jpg" alt="Café event gathering" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="customers" aria-label="Open image">
+            <div class="m-img"><img src="./assets/cafe-interior-1.jpg" alt="Guests enjoying coffee" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="art" aria-label="Open image">
+            <div class="m-img"><img src="./assets/coffee-art-2.jpg" alt="Coffee pour-over art" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="interior" aria-label="Open image">
+            <div class="m-img"><img src="./assets/cafe-interior.jpg" alt="Café interior with wooden details" loading="lazy" /></div>
+          </button>
+          <button class="m-item" data-lightbox="customers" aria-label="Open image">
+            <div class="m-img"><img src="./assets/cafe-interior-2.jpg" alt="Happy customers at the café" loading="lazy" /></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Why choose us</h2>
+          <p class="lead">Small-batch craft with a premium, welcoming experience.</p>
+        </div>
+
+        <div class="why-banner" data-fade>
+          <img src="./assets/cafe-interior.jpg" alt="Café ambiance" loading="lazy" />
+        </div>
+
+        <div class="feature-grid" data-fade>
+          <div class="feature" data-reveal>
+            <div class="feature-img"><img src="./assets/beans.jpg" alt="Freshly roasted beans" loading="lazy" /></div>
+            <h3>Freshly roasted beans</h3>
+            <p>Roasted in small batches for peak aroma and flavor.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature-img"><img src="./assets/barista.jpg" alt="Expert baristas" loading="lazy" /></div>
+            <h3>Expert baristas</h3>
+            <p>Dialed extraction and latte art—every cup deserves care.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature-img"><img src="./assets/ambience-why.jpg" alt="Cozy ambience" loading="lazy" /></div>
+            <h3>Cozy ambience</h3>
+            <p>Soft lighting, calm music, and a space made for you.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature-img"><img src="./assets/ingredients.jpg" alt="Premium ingredients" loading="lazy" /></div>
+            <h3>Premium ingredients</h3>
+            <p>Real vanilla, quality dairy, and thoughtfully sourced add-ons.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature-img"><img src="./assets/service.jpg" alt="Fast service" loading="lazy" /></div>
+            <h3>Fast service</h3>
+            <p>Quick, friendly, and consistent—without compromising quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="section section-contrast" id="reserve">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Reserve a table</h2>
+          <p class="lead">Tell us your details—our team will confirm your reservation shortly.</p>
+        </div>
+
+        <div class="reserve-card" data-fade>
+          <form class="form-grid" id="reservationForm" novalidate>
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label class="field">
+              <span>Phone number</span>
+              <input type="tel" name="phone" placeholder="+91 ..." required />
+            </label>
+
+            <label class="field">
+              <span>Date & Time</span>
+              <input type="datetime-local" name="datetime" required />
+            </label>
+
+            <label class="field">
+              <span>Number of guests</span>
+              <input type="number" name="guests" min="1" max="20" value="2" required />
+            </label>
+
+            <label class="field field-wide">
+              <span>Special request</span>
+              <textarea name="request" placeholder="Allergies, seating preferences, celebrations..." rows="3"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-accent" type="submit">Reserve Table</button>
+              <p class="form-note">By reserving, you agree to our cozy-café etiquette.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal" aria-hidden="true" data-reserve-modal>
+          <div class="modal-inner" role="dialog" aria-modal="true" aria-label="Reservation confirmed">
+            <button class="modal-close" type="button" aria-label="Close" data-reserve-close>✕</button>
+            <h3 class="modal-title">Reservation Confirmed</h3>
+            <div class="reserve-success">
+              <div class="reserve-badge" aria-hidden="true">✓</div>
+              <p class="reserve-text">Thanks! We’ll reach out shortly to confirm your table.</p>
+              <div class="reserve-summary" data-reserve-summary></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">What our guests say</h2>
+          <p class="lead">Soft vibes, bold coffee, and unforgettable moments.</p>
+        </div>
+
+        <div class="t-carousel" data-t-carousel data-fade>
+          <div class="t-track" data-t-track>
+            <article class="t-card is-active">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="t-quote">“Best café experience in town — perfect coffee and vibe!”</p>
+              <div class="t-meta">— Aanya S.</div>
+            </article>
+            <article class="t-card">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="t-quote">“The ambience is unreal. Latte art that looks like art.”</p>
+              <div class="t-meta">— Rahul K.</div>
+            </article>
+            <article class="t-card">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="t-quote">“Fast service, premium ingredients, and consistently great taste.”</p>
+              <div class="t-meta">— Sara M.</div>
+            </article>
+          </div>
+
+          <div class="t-controls">
+            <button class="car-btn" type="button" data-t-prev aria-label="Previous review">←</button>
+            <div class="dots" data-t-dots></div>
+            <button class="car-btn" type="button" data-t-next aria-label="Next review">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section class="section section-contrast" id="contact">
+      <div class="container">
+        <div class="section-head" data-fade>
+          <h2 class="h2">Location & Contact</h2>
+          <p class="lead">Come by, relax, and let your next cup find you.</p>
+        </div>
+
+        <div class="grid-2 contact-grid" data-fade>
+          <div class="map-wrap">
+            <div class="map-label">Find us on the map</div>
+            <div class="map-frame">
+              <iframe src="https://maps.google.com/maps?q=cafe+noon+coffee+shop&t=&z=15&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" title="Café Noon location"></iframe>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-row"><span>Address</span><strong>123 Noon Street, Coffee District</strong></div>
+            <div class="contact-row"><span>Phone</span><a href="tel:+911234567890">+91 123 456 7890</a></div>
+            <div class="contact-row"><span>Email</span><a href="mailto:hello@cafenoonsample.com">hello@cafenoonsample.com</a></div>
+            <div class="contact-row"><span>Opening hours</span><strong>Mon–Sun: 8 AM – 11 PM</strong></div>
+
+            <div class="social-row">
+              <a class="social" href="#" aria-label="Instagram">⌁ Instagram</a>
+              <a class="social" href="#" aria-label="Facebook">⌁ Facebook</a>
+              <a class="social" href="#" aria-label="Twitter">⌁ Twitter</a>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn-light" href="#menu">View Menu</a>
+              <a class="btn btn-accent" href="#reserve">Reserve Table</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="brand-mark" aria-hidden="true">☕</span>
+            <span class="brand-name">Café Noon</span>
+          </div>
+          <p class="footer-note">Where Every Cup Tells a Story.</p>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3>Quick links</h3>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#reserve">Reserve</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h3>Menu links</h3>
+            <a href="#menu" data-jump="hot">Hot Coffee</a>
+            <a href="#menu" data-jump="cold">Cold Coffee</a>
+            <a href="#menu" data-jump="snacks">Snacks & Bakery</a>
+            <a href="#menu" data-jump="desserts">Desserts</a>
+          </div>
+          <div class="footer-col">
+            <h3>Social</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>© <span id="year"></span> Café Noon. All rights reserved.</div>
+        <div class="footer-small">Made with care • Premium café web experience</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp" href="#" aria-label="Chat on WhatsApp">
+    <span aria-hidden="true">💬</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true" data-lightbox-modal>
+    <button class="lightbox-close" type="button" aria-label="Close" data-lightbox-close>✕</button>
+    <div class="lightbox-media">
+      <img class="lightbox-img" src="" alt="Gallery image" data-lightbox-src />
+    </div>
+    <div class="lightbox-caption" data-lightbox-caption>Ambience snapshot</div>
+  </div>
+
+  <!-- Order modal -->
+  <div class="modal" aria-hidden="true" data-order-modal>
+    <div class="modal-inner" role="dialog" aria-modal="true" aria-label="Your order">
+      <button class="modal-close" type="button" aria-label="Close order" data-order-close>✕</button>
+      <h3 class="modal-title">Your Order</h3>
+      <div class="modal-list" data-order-list></div>
+      <div class="modal-actions">
+        <button class="btn btn-accent" type="button" data-order-clear>Clear</button>
+        <a class="btn btn-dark" href="#reserve" data-order-reserve>Reserve with Order</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
+
